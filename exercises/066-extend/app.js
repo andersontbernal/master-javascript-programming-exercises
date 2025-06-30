@@ -9,5 +9,11 @@ let obj2 = {
 
 function extend(obj1, obj2) {
     // your code here
-
+    for (let key in obj2) {
+        if ( obj1[key] === undefined) {
+            obj1[key] = obj2[key];
+        
+            
+        }
+    }
 }
